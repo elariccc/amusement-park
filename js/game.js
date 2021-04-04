@@ -35,6 +35,7 @@ export default class Game {
   start() {
     this.timeStart = performance.now();
     this.timeCurrent = this.timeStart;
+    this.timePassed = 0;
     this.wind = 0;
     this.windTarget = 0;
     this.balloons = [];
