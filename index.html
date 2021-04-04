@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Document</title>
+  <script type='module' src='./js/index.js'></script>
+  <link rel='stylesheet' href='./css/index.css'>
+  <link rel="preconnect" href="https://fonts.gstatic.com">
+  <link href="https://fonts.googleapis.com/css2?family=Yellowtail&display=swap" rel="stylesheet">
+</head>
+<body>
+  <div id='root'></div>
+  <div id='field-root'></div>
+  <div class='field'>
+    <canvas id='game-field' class='field__game'></canvas>
+    <div id='results' class='field__results results results--out'>
+      <div id='stats' class='results__stats'>
+        You poped 4 of 15 ballons!
+      </div>
+      <div id='play-again-button' class='results__play-again'>
+        Play again
+      </div>
+    </div>
+    <div id='menu' class='field__menu menu'>
+      <div id='start-button' class='menu__start'>
+        Start
+      </div>
+    </div>
+    <div id='loading-screen' class='field__loading loading'>
+      <div>
+        Game is about to begin...
+      </div>
+    </div>
+    <img src='img/background.png' class='field__background'/>
+    <div id='timer' class='field__timer timer'>
+    </div>
+  </div>
+</body>
+</html>

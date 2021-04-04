@@ -1,0 +1,82 @@
+body {
+  margin: 0;
+}
+
+.field {
+  position: relative;
+  font-family: 'Yellowtail';
+  font-size: 60px;
+  color: midnightblue;
+}
+
+.field__background {
+  position: absolute;
+  pointer-events: none;
+}
+
+.field__game, .field__loading, .field__menu, .field__results {
+  position: absolute;
+  left: 100px;
+  top: 100px;
+}
+
+.field__timer {
+  position: absolute;
+  left: 100px;
+  top: 625px;
+}
+
+.timer {
+  width: 600px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.loading, .menu, .results {
+  width: 600px;
+  height: 600px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  background-color: burlywood;
+}
+
+.results__stats {
+  font-size: x-large;
+}
+
+.menu__start, .results__play-again {
+  cursor: pointer;
+}
+
+.loading--out, .menu--out, .results--out {
+  animation: fade-out 0.5s forwards;
+}
+
+.results--in {
+  animation: fade-in 0.5s forwards;
+}
+
+@keyframes fade-out {
+  0% {
+    opacity: 1;
+  }
+
+  100% {
+    opacity: 0;
+    visibility: hidden;
+  }
+}
+
+@keyframes fade-in {
+  0% {
+    opacity: 0;
+    visibility: inherit;
+  }
+
+  100% {
+    opacity: 1;
+  }
+}
